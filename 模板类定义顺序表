@@ -19,8 +19,8 @@ T *PDate(){ return data;}     //返回数组data[MaxSize]的首地址
 
 
 T Get(int i);  //定义函数，取线性表第i个元素
-void Insert(int i,T x);   //定义函数，在线性表第i个元素插入x，其他元素后移
-T Delete(int i)  //定义函数，删去线性表第i个元素，其他元素前移
+void Insert(int i,T x);   //定义函数，在线性表第i个元素插入x，其他元素后移          
+T Delete(int i)  //定义函数，删去线性表第i个元素，其他元素前移                      （ i=0,1，2,3,4........）    
 int Locate(T x)   //定义函数，定位值为x元素在线性表的元素序号（下标）
 void Set(int i, T x);   //定义函数，用来设置线性表的第i个元素为x
 void PrintList();   //定义函数，输出线性表的各个元素
