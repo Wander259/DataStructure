@@ -1,0 +1,11 @@
+template T
+T SeqList<T>::Delete(int i)
+{
+if(length==0) throw"无元素可删"
+if(i<0||i>length-1)  throw"位置错误"
+T x = data[i]; //将第i个元素的值赋给x
+for(j=i+1;j<length;j++)  data[j-1]=a[j]; //将第i个元素之后的元素依次向前移动：第i个用i+1个....来替代
+length--;
+return x;
+
+}
