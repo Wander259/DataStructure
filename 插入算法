@@ -1,0 +1,10 @@
+template <T>
+void SeqList<T>::Insert(int i,T x)
+{
+if(length==MaxSize) throw "上溢"  //插入前线性表的元素个数已经达到了MaxSize，无法插入
+if(i<0 || i>length) throw "位置错误"
+for (j=length;j>i;j--)     //将第i位之后的元素后移
+   date[j]=date[j-1];
+date[i]=x;       //第i位变为x
+length++;        //线性表长度+1
+}
