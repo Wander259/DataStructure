@@ -1,0 +1,7 @@
+template <class T>
+SeqList<T>::SeqList(T a[],int n)
+{
+if(n>MaxSize) throw ""参数非法
+for(i=0;i<n;i++) data[i]=a[i]  //初始化数组data
+length=n;
+}
