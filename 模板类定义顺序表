@@ -1,0 +1,31 @@
+const int MaxSize=100;   //定义数据元素所存放的数组的最大大小，100可以根据实际情况改变 
+template <class T>    
+/*
+模板类以template <class T>开头。template告诉编译器将要定义一个模板，这里的class并不意味着T必须是一个类，而只是表明T是一个通用的类型说明符，在使用模板时将用
+涉及的类型替换它。（T可以用来代表class，int，double，char等关键字，甚至代表多个）
+*/
+class SeqList  //定义SeqList线性表类
+{
+public:
+SeqList(){length=0;}  //无参构造函数
+SeqList(T a[], int n} //有参构造函数
+~SeqList(){} //析构函数
+int GetLength(){return length;} //定义函数获取线性表长度
+void SetLength(int n){length=n;}  //设置线性表的长度为n
+T *PDate(){ return data;}     //返回数组data[MaxSize]的首地址
+
+
+
+
+T Get(int i);  //定义函数，取线性表第i个元素
+void Insert(int i,T x);   //定义函数，在线性表第i个元素插入x，其他元素后移
+T Delete(int i)  //定义函数，删去线性表第i个元素，其他元素前移
+int Locate(T x)   //定义函数，定位值为x元素在线性表的元素序号（下标）
+void Set(int i, T x);   //定义函数，用来设置线性表的第i个元素为x
+void PrintList();   //定义函数，输出线性表的各个元素
+
+private:
+T data[MaxSize];     // 定义存放元素的数组
+int length;
+
+}
