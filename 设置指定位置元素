@@ -1,0 +1,7 @@
+template class<T>
+void SeqList<T>::Set(int i,T x)
+{
+if(i<0||i>=length) throw "Wrong Position";
+data[i]=x
+
+}
