@@ -3,7 +3,7 @@ template <class T>
 /*
 模板类以template <class T>开头。template告诉编译器将要定义一个模板，这里的class并不意味着T必须是一个类，而只是表明T是一个通用的类型说明符，在使用模板时将用
 涉及的类型替换它。（T可以用来代表class，int，double，char等关键字，甚至代表多个）
-类外定义每个函数头都将以相同的模板声明打头：template <class T>  另外若函数中有出现T,则类限定符要从SeqList::改为SeqList<T>::
+类外定义每个函数头都将以相同的模板声明打头：template <class T>  另外若函数形参列表或函数体中有出现T,则类限定符要从SeqList::改为SeqList<T>::
 */
 class SeqList  //定义SeqList线性表类
 {
