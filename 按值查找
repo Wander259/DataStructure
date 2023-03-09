@@ -1,0 +1,8 @@
+template <class T>
+int SeqList<T>::Locate(T x)
+{
+    for(i=0;i<length;i++)
+      if(data[i]==x)
+        return i;
+      return -1   //表中无值的标志
+}
