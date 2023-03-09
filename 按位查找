@@ -1,5 +1,5 @@
 template <T>
-T SeqList<T>::Get(int i)
+T SeqList::Get(int i)
 {
 if(i<0||i>=length) throw "Wrong Position"
 return data[i]
